@@ -1,0 +1,17 @@
+version: "3.9"
+
+services:
+  app:
+    build:
+      context: app/
+      dockerfile: Dockerfile
+    ports:
+      - "8080:3000"
+    restart: unless-stopped
+  server:
+    build:
+      context: server/
+      dockerfile: Dockerfile
+    ports:
+      - "8081:3001"
+    restart: unless-stopped

@@ -1,0 +1,15 @@
+{
+  "name": "server-crudoperation",
+  "version": "1.0.0",
+  "description": "CRUD Server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "json-server --watch db/db.json --host 0.0.0.0 --port 3001"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "json-server": "^0.17.0"
+  }
+}
